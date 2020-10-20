@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    double x;
+    double y;
+    
+    for(x = 0.1; x <= 1.2; x+=0.1)
+    {
+        for(n = 1; n <= 20; n++)
+        {
+            y = (pow(x, n - 1)) / ((2*n) + 1);
+        }
+        cout << "x(" << x << ") = " << y << "\n";
+    }
+
+    return 0;
+}
