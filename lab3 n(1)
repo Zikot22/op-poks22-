@@ -18,7 +18,7 @@ int main()
             y = (pow(x, n - 1)) / ((2*n) + 1);
             res += y;
         }
-        cout << "x(" << x << ") = " << res << "\n";
+        cout << "y(" << x << ") = " << res << "\n";
     }
 
     return 0;
