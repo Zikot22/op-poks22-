@@ -1,0 +1,36 @@
+n = int(input("Введите кол-во строк массива: ")) 
+mas = []
+
+for a in range(n):
+    print("Введите через пробел значения строчки", a+1, ":")
+    row = input().split()
+    for a in range(len(row)):
+        row[a] = int(row[a])
+    mas.append(row)
+    
+print("Ваш массив: ")
+for a in range(len(mas)):
+    print(mas[a])
+    
+S = int(input("Введите строку массива: "))
+i = int(input("Введите номер начала отсчета: "))
+j = int(input("Введите номер конца отсчета: "))
+
+def schet(arr):
+    count = arr[S][i]
+    for a in arr[S]:
+        if a >= i:
+            if i < j:
+                if count == i:
+                    count = i
+            if i == j:
+                if count == i:
+                    return(print("Симметричны"))
+                else:
+                    return(print("Не симметричны"))
+                
+            
+        else:
+            continue
+
+print(schet(mas))
